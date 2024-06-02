@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
             audio.play().catch(function(error) {
                 console.log('Error playing music:', error);
             });
-            playButton.textContent = "Pause Music";
+            playButton.textContent = "";
         } else {
             audio.pause();
-            playButton.textContent = "Play Music";
+            playButton.textContent = "";
         }
     });
 });
